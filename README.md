@@ -1,4 +1,5 @@
-<img src="https://remsfal.de/remsfal-logo.svg" width="60%">
+<img src="https://remsfal.de/remsfal-logo.svg" width="60%" alt="Logo of the project, featuring a stylized green 
+building silhouette combined with the word “REMSFAL” in bold uppercase letters.">
 
 ![GitHub Release](https://img.shields.io/github/v/release/remsfal/remsfal-backend?label=latest%20release)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
@@ -25,7 +26,7 @@ The project is structured into multiple modules:
 
 ## Development
 
-This project uses MAVEN to build and test the complete backand microservice architecture.
+This project uses MAVEN to build and test the complete backend microservice architecture.
 Before you change anything, make sure that your development setup meets the requirements as described in [Prerequisites](#prerequisites).
 Afterwards you can build and package the application by running:
 
@@ -44,24 +45,24 @@ To develop or start this project locally, you need
 
 ## How to get started
 
-For ease of use its recommended to run postgresql using the provided [docker-compose.yml](docker-compose.yml).
+For ease of use, it's recommended to run postgresql using the provided [docker-compose.yml](docker-compose.yml).
 
 ```sh
 docker compose up -d
 ```
 
 **Important:** The [`docker-compose.yml`](docker-compose.yml) file uses the `include:` directive, which is only supported in
-newer versions of Docker Compose. Please make sure your Docker Desktop or Docker Compose CLI is up to date.
+newer versions of Docker Compose. Please make sure your Docker Desktop or Docker Compose CLI is up-to-date.
 
 ### CI/CD
 
 This project utilizes Github Actions to check the code quality
-using [SonarCloud](https://sonarcloud.io/summary/new_code?id=remsfal_remsfal-backend&branch=main) therefore its
+using [SonarCloud](https://sonarcloud.io/summary/new_code?id=remsfal_remsfal-backend&branch=main) therefore it's
 mandatory to pass the specified **Quality Gates** before a pull request can be merged.
 
 ### Start in dev mode
 
-At first you well need to start the db as described in [Prerequisites](#prerequisites).
+At first, you will need to start the db as described in [Prerequisites](#prerequisites).
 
 Next run the project using the following command:
 
@@ -70,14 +71,14 @@ Next run the project using the following command:
 ./mvnw compile quarkus:dev -pl remsfal-services/remsfal-platform
 ```
 
-It will automatically recompile when you change something.
+It will automatically recompile once you change something.
 
 ### Stylecheck
 
 This project uses [Checkstyle](https://github.com/checkstyle/checkstyle) for code formatting. Please ensure your code
 adheres to the style defined in the [checkstyle.xml](src/main/style/checkstyle.xml).
 
-To run the stylecheck use the following command:
+To run the style check, use the following command:
 
 ```sh
 ./mvnw checkstyle:checkstyle
